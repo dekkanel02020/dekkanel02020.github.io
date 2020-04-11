@@ -28,9 +28,13 @@ var allOption = [
   }
 ]
 
+
+
+
 var possibleUserPicks = document.getElementsByClassName("user-choice");
 
 for (var i = 0; i < possibleUserPicks.length; i++) {
+
   possibleUserPicks[i].addEventListener("click",function (){
 
    userPick = this.dataset.name;
@@ -43,9 +47,20 @@ for (var i = 0; i < possibleUserPicks.length; i++) {
    document.getElementById("player-score").innerHTML = score.userScore;
    document.getElementById("cpu-score").innerHTML = score.cpuScore;
 
+
+
  })/*innerHTML = ENTRARE DENTRO AL DOCUMENTO*/
 
 }
+
+
+document.getElementById("button").addEventListener("click",function(){
+  score.userScore = 0;
+  score.cpuScore  = 0;
+  document.getElementById("player-score").innerHTML = score.userScore;
+  document.getElementById("cpu-score").innerHTML = score.cpuScore;
+})
+
 
 function GeneratePick(){
   cpuPick = allOption[Math.floor(Math.random() * allOption.length)];
