@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+   
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+
+ 
    
     <!-- Stili -->
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -19,10 +22,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
      <!-- Titolo sopra  -->   
     <title>La Bottega del Fabbro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
 </head>
 <body>
+ 
+    <audio id="audioID">
+        <source src="welding.ogg" type="audio/ogg">
+        <source src="welding.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+      </audio>
      <!-- Navigazione bar     
     <header>
         <nav>
@@ -37,34 +52,41 @@
         </nav>
     </header>
 -->
+
     <main id="main-content">
 
         <section id="intro">
             <div class="container">
                 <div class="nav">
-                    <a href="#">
+                    <a href="#" onmouseenter="playAudio()">
                         <div class="bottons buttons1">
                             HOME
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="#lavori" onmouseenter="playAudio()">
                         <div class="bottons buttons2">
-                            LA DITTA
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="bottons buttons3">
                             LAVORI
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="#" onmouseenter="playAudio()">
+                        <div class="bottons buttons3">
+                            LA DITTA
+                        </div>
+                    </a>
+                    <a href="#" onmouseenter="playAudio()">
                         <div class="bottons buttons4">
                             DOVE SIAMO
                         </div>
                     </a>
                     
                 </div>
+               
+               
+
+
+
             </div>
+           <a href="#lavori"><img src="https://img.icons8.com/nolan/64/double-down.png" class="fas"/></a> 
 
             <ul class="bubbles">
                 <li></li>
@@ -76,6 +98,180 @@
 
         </section>
 
+        <section id="lavori">
+            <h2>LA BOTTEGA DEL</h2>
+            <div class="container">
+                <div class="caption">
+                    <h1>LA BOTTEGA DEL FABBRO</h1>
+                    <p>La Bottega del Fabbro di Boca si occupa di lavorazione del ferro e metalli per la creazione di opere e strutture per interni ed esterni: dalle scale ai serramenti.
+
+                        L'officina è attrezzata per lavorazioni personalizzate e su misura per diverse dimensioni.</p>
+                    
+                </div>
+
+                
+                <div class="gallery">
+                    <img src="images/1.webp" alt="">
+                    <img src="images/2.webp" alt="">
+                    <img src="images/3.webp" alt="">
+                    <img src="images/4.webp" alt="">
+                    <img src="images/5.webp" alt="">
+                    <img src="images/6.webp" alt="">
+                    <img src="images/7.webp" alt="">
+                    <img src="images/8.webp" alt="">
+                    <img src="images/9.webp" alt="">
+                    <img src="images/10.webp" alt="">
+                    <img src="images/11.webp" alt="">
+                    <img src="images/12.webp" alt="">
+                    <img src="images/13.webp" alt="">
+                    <img src="images/14.webp" alt="">
+                    <img src="images/15.webp" alt="">
+                    <img src="images/16.webp" alt="">
+                    <img src="images/17.webp" alt="">
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="mobile">
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="images/1.webp" alt="">
+                </div>     
+                <div class="details">
+                    <img src="signature.png" alt="">
+                </div>          
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="images/2.webp" alt="">
+                </div>     
+                <div class="details">
+                    <img src="signature.png" alt="">
+                </div>          
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="images/4.webp" alt="">
+                </div>     
+                <div class="details">
+                    <img src="signature.png" alt="">
+                </div>          
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="images/5.webp" alt="">
+                </div>     
+                <div class="details">
+                    <img src="signature.png" alt="">
+                </div>          
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="images/6.webp" alt="">
+                </div>     
+                <div class="details">
+                    <img src="signature.png" alt="">
+                </div>          
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="images/7.webp" alt="">
+                </div>     
+                <div class="details">
+                    <img src="signature.png" alt="">
+                </div>          
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="images/8.webp" alt="">
+                </div>     
+                <div class="details">
+                    <img src="signature.png" alt="">
+                </div>          
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="images/9.webp" alt="">
+                </div>     
+                <div class="details">
+                    <img src="signature.png" alt="">
+                </div>          
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="images/10.webp" alt="">
+                </div>     
+                <div class="details">
+                    <img src="signature.png" alt="">
+                </div>          
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="images/11.webp" alt="">
+                </div>     
+                <div class="details">
+                    <img src="signature.png" alt="">
+                </div>          
+            </div>
+            
+           
+         
+        </div>
+    
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="caption">
+        <h1>LA BOTTEGA DEL FABBRO</h1>
+        <p>La Bottega del Fabbro di Boca si occupa di lavorazione del ferro e metalli per la creazione di opere e strutture per interni ed esterni: dalle scale ai serramenti.
+
+            L'officina è attrezzata per lavorazioni personalizzate e su misura per diverse dimensioni.</p>
+        
+    </div>
+        </section>
+
+
+
     </main>
+    <script type="text/javascript" src="swiper.min.js"></script>
+    <script>
+var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+
+
+
+
+        //Defining variable based on unique ID
+
+var audio1 = document.getElementById("audioID");
+audio1.volume = 0.4;
+//Example of an HTML Audio/Video Method
+
+function playAudio() {
+  audio1.play();
+}
+
+
+
+    </script>
 </body>
 </html>
