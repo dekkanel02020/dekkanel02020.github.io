@@ -10,6 +10,10 @@ const two = document.querySelector(".two");
 const three = document.querySelector(".three");
 let open = false;
 const slide = document.querySelector(".slide");
+const ahref = document.getElementsByClassName("ahref")[0];
+const ahref1 = document.getElementsByClassName("ahref")[1];
+const ahref2 = document.getElementsByClassName("ahref")[2];
+const ahref3 = document.getElementsByClassName("ahref")[3];
 
 menu.addEventListener("click",function(){
     if (!open) {
@@ -19,6 +23,10 @@ menu.addEventListener("click",function(){
         open = true;
         slide.classList.add("slide-modify");
         menu.classList.add("menu-modify");
+        ahref.classList.add("ahref1");
+        ahref1.classList.add("ahref2");
+        ahref2.classList.add("ahref3");
+        ahref3.classList.add("ahref4");
         
     }
     else{
@@ -28,6 +36,10 @@ menu.addEventListener("click",function(){
         open = false;
         slide.classList.remove("slide-modify");
         menu.classList.remove("menu-modify");
+        ahref.classList.remove("ahref1");
+        ahref1.classList.remove("ahref2");
+        ahref2.classList.remove("ahref3");
+        ahref3.classList.remove("ahref4");
       
     }
        
