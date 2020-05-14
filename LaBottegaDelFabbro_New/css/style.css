@@ -1,5 +1,5 @@
 
-
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 * {
     box-sizing: border-box;
@@ -127,7 +127,7 @@ h3{
 .preload-finish{
     opacity: 0;
     pointer-events: none;
-    transition: all 2s;
+    transition: all 1s;
 }
 
 /*--------------------------------------------------*/
@@ -141,12 +141,14 @@ h3{
 .half{
     
     width: 100%;
-    height: 70%;
+    height: 80%;
     background:linear-gradient(119deg, rgba(0,0,0,0.7771260997067448) 3%, rgba(0,0,0,0) 100%),
                url(../images/welding.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 300vw;
+    z-index: -10;
+    margin: 0;
 }
 .menu{
     position: absolute;
@@ -208,5 +210,49 @@ h3{
     transition: all 0.3s ease-in;
 }
 
+.slide{
+    position: absolute;
+    background-color: rgba(0,0,0,1);
+    width: calc(100vw);
+    height: 100vh;
+    z-index: 10000;
+    top: 0;
+    left: calc(calc(-100vw - 65px));
+    transition: all 0.5s ease-in;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    pointer-events: none;
+    filter: blur(3px);
+}
+
+.slide-modify{
+    left: 0;
+    transition: all 0.5s ease-in;
+    filter: blur(0px);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    border: 1px solid white;
+    width: 40%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.slide a:nth-child(1){
+    margin-top: 50px;
+}
+.slide a:nth-child(4){
+    margin-bottom: 50px;
+}
+
+.menu-modify{
+    z-index: 100000;
+}
 
 
