@@ -359,6 +359,14 @@ h3{
     position: relative;
  
 }
+.button-scopri{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 20000000;
+    width: 50px;
+
+}
 
 
 
