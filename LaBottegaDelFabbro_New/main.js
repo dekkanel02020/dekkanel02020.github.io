@@ -14,6 +14,8 @@ const ahref = document.getElementsByClassName("ahref")[0];
 const ahref1 = document.getElementsByClassName("ahref")[1];
 const ahref2 = document.getElementsByClassName("ahref")[2];
 const ahref3 = document.getElementsByClassName("ahref")[3];
+const lavori = document.querySelector(".ahref");
+const lavori1 = document.querySelector(".lavori");
 
 menu.addEventListener("click",function(){
     if (!open) {
@@ -46,6 +48,48 @@ menu.addEventListener("click",function(){
     
    
 });
+
+
+lavori.addEventListener("click",function(){
+        
+
+
+    open = false;
+    slide.classList.remove("slide-modify");
+    menu.classList.remove("menu-modify");
+    ahref.classList.remove("ahref1");
+    ahref1.classList.remove("ahref2");
+    ahref2.classList.remove("ahref3");
+    ahref3.classList.remove("ahref4");
+    one.classList.remove("one-modify");
+    two.classList.remove("two-modify");
+    three.classList.remove("three-modify");
+  
+
+
+
+});
+
+lavori1.addEventListener("click",function(){
+        
+
+
+  open = false;
+  slide.classList.remove("slide-modify");
+  menu.classList.remove("menu-modify");
+  ahref.classList.remove("ahref1");
+  ahref1.classList.remove("ahref2");
+  ahref2.classList.remove("ahref3");
+  ahref3.classList.remove("ahref4");
+  one.classList.remove("one-modify");
+  two.classList.remove("two-modify");
+  three.classList.remove("three-modify");
+
+
+
+
+});
+
 
 
 var swiper = new Swiper('.swiper-container', {
