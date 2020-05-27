@@ -145,14 +145,12 @@ h3{
   
 }
 .half{
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 70vh;
-    background: 
-               url(../images/welding.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  
     z-index: -10;
     margin: 0;
     
@@ -207,7 +205,7 @@ h3{
 }
 
 .btn{
-    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .three{
@@ -301,7 +299,7 @@ h3{
     position: absolute;  
     text-align: center;
     left: 50%;
-    bottom: 30%;
+    bottom: -20%;
     transform: translateX(-50%);
     animation: arrow 1s ease-in-out 1s alternate infinite;
     
@@ -318,15 +316,7 @@ h3{
     }
 }
 
-.second-half{
-    background-color: black;
-    width: 100vw;
-    height: 30vh;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    
-}
+
 
 .second-half a{
     position: absolute;
@@ -357,6 +347,7 @@ h3{
     align-items: center;
     position: relative;
     overflow: hidden;
+    background: linear-gradient(180deg, rgba(39,48,54,1) 30%, rgba(255,255,255,0) 92%);
 }
 
 .swiper-slide{
@@ -427,7 +418,7 @@ h3{
 .info1{
     height: 33.3vh;
     width: 100vw;
-    background-color: #f2f2f2;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -440,11 +431,12 @@ h3{
     align-items: center;
     flex-direction: column;
     width: 100vw;
+    background-color: #f2f2f2;
 }
 
 .info3{
     height: 33.3vh;
-    background-color: #f2f2f2;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -461,7 +453,7 @@ h3{
 .info1 p{
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 11px;
+    font-size: 14px;
     margin: 0 auto;
     width: 80%;
 }
@@ -475,7 +467,7 @@ h3{
 .info2 p{
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 11px;
+    font-size: 14px;
     margin: 0 auto;
     width: 80%;
 }
@@ -489,9 +481,32 @@ h3{
 .info3 p{
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 11px;
+    font-size: 14px;
     margin: 0 auto;
     width: 80%;
 }
 
+.svg1{
+    height: 600px;
+ 
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.svg2{
+    height: 2000px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+}
 
+.title{
+    width: 50%;
+    z-index: 9999;
+    transform: translateY(-50px);
+    font-size: 20px;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+  
+}
