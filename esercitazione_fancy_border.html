@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio Fancy Border</title>
+
+    <link href='https://css.gg/arrow-up.css' rel='stylesheet'>
+    <link href='https://css.gg/home-altcss' rel='stylesheet'>
+    <link href='https://css.gg/phone.css' rel='stylesheet'>
+    <link href='https://css.gg/smart-home-light.css' rel='stylesheet'>
+    <link href='https://css.gg/add.css' rel='stylesheet'>
+    <link href='https://css.gg/smartphone.css' rel='stylesheet'>
+
+
+
+
+</head>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .contact {
+        width: 60px;
+        height: 60px;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background: rgb(10, 99, 46);
+        background: linear-gradient(159deg, rgba(10, 99, 46, 1) 28%, rgba(0, 212, 255, 1) 93%);
+        box-shadow: 1px 1px 20px black;
+        animation: fancy-border 10s infinite ease-in-out;
+    }
+
+    @keyframes fancy-border {
+        20% {
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%
+        }
+
+        40% {
+            border-radius: 80% 20% 24% 76% / 68% 30% 70% 32%;
+        }
+
+        60% {
+            border-radius: 67% 33% 72% 28% / 23% 44% 56% 77%;
+        }
+
+        80% {
+            border-radius: 67% 33% 72% 28% / 23% 82% 18% 77%;
+        }
+
+
+        100% {
+            border-radius: 50%;
+        }
+    }
+
+
+    .contact>i {
+        transition-duration: 0.3s;
+        z-index: 10;
+
+    }
+
+    .contact .menu {
+        width: 60px;
+        height: auto;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        display: flex;
+        padding-top: 20px;
+        padding-bottom: 25px;
+        border-radius: 10px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 80px;
+        gap: 15px;
+        background: rgb(10, 99, 46);
+        background: linear-gradient(159deg, rgba(10, 99, 46, 1) 28%, rgba(0, 212, 255, 1) 93%);
+        opacity: .1;
+        bottom: -500px;
+        transition-duration: 0.3s;
+        box-shadow: 1px 1px 20px black;
+
+    }
+
+    .contact .check-menu:checked~.menu {
+        bottom: 30px;
+        opacity: 1;
+
+    }
+
+    .contact .check-menu:checked~label i {
+        transform: rotate(180deg);
+
+    }
+
+    .menu div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .menu div:hover {
+        opacity: 0.5;
+
+    }
+</style>
+
+<body>
+    <div class="contact">
+        <input type="checkbox" class="check-menu" name="check" id="check" style="display: none;">
+        <label for="check"><i class="gg-arrow-up"></i></label>
+
+        <div class="menu">
+            <div><i class="gg-add"></i> </div>
+            <div> <i class="gg-smartphone"></i> </div>
+            <div> <i class="gg-phone"></i> </div>
+            <div> <i class="gg-smart-home-light"></i> </div>
+        </div>
+    </div>
+</body>
+
+</html>
