@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+}
+
+.box{
+    
+    width: 200px;
+    background: red;
+    height: 200px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.boxs{
+    position: relative;
+    width: 30%;
+    background: green;
+    height: 50px;
+}
+
+.box1{
+    transform: translate(200px);
+}
+
+
