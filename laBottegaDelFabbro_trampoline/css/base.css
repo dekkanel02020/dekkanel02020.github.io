@@ -1,0 +1,338 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700|Englebert);
+
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'codropsicons';
+	src: url("../fonts/codropsicons/codropsicons.eot");
+	src: url("../fonts/codropsicons/codropsicons.eot?#iefix") format("embedded-opentype"), url("../fonts/codropsicons/codropsicons.woff") format("woff"), url("../fonts/codropsicons/codropsicons.ttf") format("truetype"), url("../fonts/codropsicons/codropsicons.svg#codropsicons") format("svg");
+}
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+
+.cf:before,
+.cf:after {
+	content: '';
+	display: table;
+}
+
+.cf:after {
+	clear: both;
+}
+
+body {
+	height: 100vh;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: #24252c;
+	color: #fff;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.2;
+	font-family: 'Englebert', cursive;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow: hidden;
+	overflow-y: scroll;
+	/* force scroll */
+}
+
+a {
+	color: #067ba7;
+	text-decoration: none;
+	outline: none;
+}
+
+
+
+a:hover,
+a:focus {
+	color: #fff;
+}
+
+#lavori {
+	height: 100%;
+	-webkit-perspective: 1200px;
+	perspective: 1200px;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	padding: 1em;
+	position: relative;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	justify-content: center;
+	-webkit-box-direction: normal;
+	-webkit-box-orient: vertical;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.codrops-header {
+	position: relative;
+	text-align: center;
+	-webkit-flex: none;
+	flex: none;
+	margin-bottom: 3em;
+	color: #067ba7;
+	padding: 0 1em;
+}
+
+
+
+.codrops-header h1 {
+	font-weight: 400;
+	font-size: 1.75em;
+	margin: 0;
+}
+
+.info {
+	margin: 0;
+	font-size: 0.85em;
+	color: #fff;
+	font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.info a {
+	color: #e4ef80;
+	font-weight: bold;
+}
+
+
+
+.info a:hover {
+	color: #fff;
+}
+
+/* section1 */
+
+#section1 {
+	height: 100vh;
+	width: 100%;
+	background-color: rosybrown;
+	z-index: 1000000000;
+}
+
+/* menu */
+.navbar {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	z-index: 1000000000000;
+	width: 80px;
+	height: 80px;
+	overflow: hidden;
+}
+
+.toggle span {
+	position: absolute;
+	width: 40px;
+	height: 4px;
+	background-color: white;
+	border-radius: 4px;
+	transition: 0.5s;
+
+}
+
+.toggle span:nth-child(1) {
+	transform: translateY(-15px);
+	width: 25px;
+	left: 15px;
+
+
+}
+
+.toggle span:nth-child(2) {
+	transform: translateY(15px);
+	width: 15px;
+	left: 15px;
+
+
+
+
+}
+
+.toggle.active span:nth-child(3) {
+	transform: translateX(60px);
+
+
+
+}
+
+.toggle.active span:nth-child(1) {
+	width: 40px;
+	transform: translateY(0px) rotate(45deg);
+
+	transition-delay: 0.14s;
+}
+
+.toggle.active span:nth-child(2) {
+	width: 40px;
+	transform: translateY(0px) rotate(315deg);
+
+	transition-delay: 0.14s;
+
+}
+
+.toggle.active {
+	animation: 0ms;
+	border: 5px solid white;
+
+
+}
+
+.toggle {
+	border-radius: 50%;
+	border: 5px solid #00010232;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	box-sizing: border-box;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	animation-name: menuanimation;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	overflow: hidden;
+}
+
+
+@keyframes menuanimation {
+	0% {
+		border-color: #00010232;
+	}
+
+	50% {
+
+		border-color: black;
+	}
+
+	100% {
+		border-color: #00010232;
+
+	}
+
+}
+
+/* sidebarmenu */
+
+.side-bar-menu {
+	position: fixed;
+	top: 0;
+	left: -100vw;
+	width: 100vw;
+	height: 100vh;
+	background-color: black;
+	z-index: -100;
+	/* transition: ease-in-out;
+	transition-duration: 0.25s; */
+	align-items: center;
+	justify-content: center;
+
+}
+
+@keyframes sidebaranimation {
+	30% {
+		left: 50%;
+		top: 0;
+	}
+
+	50% {
+
+		left: 0;
+		top: 0;
+	}
+
+	70%{
+		left: 30px;
+		top: 0;
+	}
+
+	100% {
+		left: 0;
+		top: 0;
+
+	}
+
+}
+
+@keyframes sidebaranimationIndietro {
+  
+
+	50%{
+		background-color: red;
+	}
+	100% {
+		top: -1000px;
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.info-menu {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	text-align: start;
+}
+
+.info-menu h1 {
+	padding: 30px;
+	letter-spacing: 7px;
+	font-size: 3rem;
+	text-align: start;
+}
+
+.info-menu a {
+	text-decoration: none;
+	color: white;
+	padding: 0;
+	margin: 0;
+
+
+}
+
+.info-menu a:hover h1 {
+	cursor: pointer;
+	color: #067ba7;
+	transition: all 0.21s;
+
+}
