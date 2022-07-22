@@ -258,23 +258,23 @@ a:focus {
 @keyframes sidebaranimation {
 	30% {
 		left: 50%;
-		top: 0;
+	
 	}
 
 	50% {
 
 		left: 0;
-		top: 0;
+		
 	}
 
 	70%{
 		left: 30px;
-		top: 0;
+		
 	}
 
 	100% {
 		left: 0;
-		top: 0;
+		
 
 	}
 
@@ -283,11 +283,9 @@ a:focus {
 @keyframes sidebaranimationIndietro {
   
 
-	50%{
-		background-color: red;
-	}
+	
 	100% {
-		top: -1000px;
+		left: calc(-100vw - 250px);
 
 	}
 
