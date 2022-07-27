@@ -1,7 +1,7 @@
 ﻿<?php
 
 // Replace this with your own email address
-$to = 'labottegadelfabbro@yahoo.it';
+$to = 'fabbronatale@yahoo.it';
 
 function url(){
   return sprintf(
