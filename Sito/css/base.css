@@ -73,7 +73,7 @@ a:focus {
 }
 
 #lavori {
-	height: 100%;
+	height: 100%+300px;
 	-webkit-perspective: 1200px;
 	perspective: 1200px;
 	max-width: 100vw;
